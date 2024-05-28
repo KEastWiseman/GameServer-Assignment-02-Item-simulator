@@ -1,0 +1,23 @@
+{
+  "name": "GameServer-Assignment-02-Item-simulator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/KEastWiseman/GameServer-Assignment-02-Item-simulator",
+  "author": "KEastWiseman <2ehgus6260@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^5.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.1"
+  },
+  "scripts": {
+    "dev": "nodemon app.js"
+  }
+}
