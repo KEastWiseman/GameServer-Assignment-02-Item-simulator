@@ -42,11 +42,10 @@ router.post('/sign-in', async(req, res, next)=>{
     else if(!(await bcrypt.compare(password, user.password))){
         return res.status(401).json({message : '비밀번호가 일치하지 않습니다.'});
     }
-
     const token = jwt.sign({
         userId : user.userId,
     },
-    'custom-secret-key',
+    process.env.CUSTOM_SECRET_KEY,
     );
 
     res.setHeader('Authorization',`Bearer ${token}`)
